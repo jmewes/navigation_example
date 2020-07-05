@@ -12,7 +12,6 @@ class MyApp extends StatelessWidget {
       title: 'Example',
       home: FirstPage(),
       routes: {
-        '/1': (context) => FirstPage(),
         '/2': (context) => SecondPage(),
       },
     );
@@ -26,7 +25,7 @@ class FirstPage extends StatelessWidget {
       body: Container(
         child: DropdownSearch<String>(
           hint: 'Please select something',
-          items: ['One', 'Two'],
+          items: ['Two'],
           onChanged: (item) {
             Navigator.of(context).pushNamed('/2');
             Navigator.of(context).pushNamed('/2');
