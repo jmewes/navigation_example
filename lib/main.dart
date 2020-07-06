@@ -27,7 +27,7 @@ class FirstPage extends StatelessWidget {
           hint: 'Please select something',
           items: ['Two'],
           onChanged: (item) {
-            Navigator.of(context).pushNamed('/2');
+            //Navigator.of(context).pushNamed('/2');
             Navigator.of(context).pushNamed('/2');
           },
         ),
